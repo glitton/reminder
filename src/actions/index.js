@@ -1,4 +1,4 @@
-import { ADD_REMINDER } from './constants';
+import { ADD_REMINDER } from '../constants';
 
 //action creator that adds the text to the Add Reminder button
 export const addReminder = (text) => {

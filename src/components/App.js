@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   addReminder(){
-    console.log('this.state', this.state);
+    this.props.addReminder(this.state.text);
   }
 
   render(){
@@ -37,10 +37,8 @@ class App extends Component {
             </button>  
         </div>  
       </div>
-
-
     );
   }
 }
 
-export default App;
+export default connect(null, { addReminder} )(App);
